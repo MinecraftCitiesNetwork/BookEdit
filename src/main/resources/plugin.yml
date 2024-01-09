@@ -1,0 +1,9 @@
+name: BookEdit
+version: '${project.version}'
+main: org.plugin.bookedit.BookEdit
+api-version: '1.20'
+authors: [KNProNoob]
+commands:
+  book:
+    description: Main command for BookEdit
+    usage: /book anonymous - Makes the book author anonymous
