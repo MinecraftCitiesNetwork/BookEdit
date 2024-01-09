@@ -28,11 +28,14 @@ public class Command implements CommandExecutor {
                         if (args[0].equalsIgnoreCase("anonymous")){
                             meta.setAuthor("Anonymous");
                             item.setItemMeta(meta);
+                            p.sendMessage("The author of the book is now Anonymous");
                         } else if (args[0].equalsIgnoreCase("tattered")) {
                             meta.setGeneration(BookMeta.Generation.TATTERED);
                             item.setItemMeta(meta);
-                        }
-                        else{
+                            p.sendMessage("The book is now tattered");
+                        } else if (args[0].equalsIgnoreCase("link")) {
+                            return true;
+                        } else{
                             p.sendMessage(ChatColor.RED + "Incorrect command");
                         }
 
