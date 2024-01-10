@@ -26,9 +26,11 @@ public final class BookEdit extends JavaPlugin implements Listener {
     @EventHandler
     public void BookEvent(PlayerEditBookEvent event){
         BookMeta bookMeta = event.getNewBookMeta();
+
+
+
         int i = 1;
         for(String page : bookMeta.getPages()){
-            System.out.println(page);
             page = page.replace("<b>", "" + ChatColor.BOLD);
             page = page.replace("<i>", "" + ChatColor.ITALIC);
             page = page.replace("<u>", "" + ChatColor.UNDERLINE);

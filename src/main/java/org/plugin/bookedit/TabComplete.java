@@ -23,23 +23,7 @@ public class TabComplete implements TabCompleter {
                 options.add("anonymous");
                 options.add("tattered");
                 options.add("help");
-                options.add("link");
                 return options;
-            } else if (args.length == 2 && args[0].equalsIgnoreCase("link")) {
-                ItemStack item = p.getInventory().getItemInMainHand();
-                if(item.getType() == Material.WRITABLE_BOOK){
-                    BookMeta meta = (BookMeta) item.getItemMeta();
-                    List<String> pages = meta.getPages();
-                    for (String page : pages){
-                        String[] page_splited = page.split("<a>");
-                        for(int i = 0; i < page_splited.length; i++){
-                            if(i%2 != 0){
-                                options.add(page_splited[i]);
-                            }
-                        }
-                    }
-                    return options;
-                }
             }
 
         }
