@@ -1,2 +1,37 @@
-# Project exclude paths
-/target/
+# Gradle
+.gradle/
+build/
+out/
+*.iml
+*.ipr
+*.iws
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.cache
