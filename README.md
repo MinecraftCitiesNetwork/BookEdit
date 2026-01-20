@@ -1,0 +1,1 @@
+This is a streamlined fork of [BookEdit](https://github.com/KristianNikolov07/BookEdit) which eatures MiniMessage formatting.
